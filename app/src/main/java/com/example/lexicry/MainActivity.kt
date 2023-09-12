@@ -105,51 +105,6 @@ class Solution {
                 val endpointOnesDigit = n.toString().substring(3).toInt()
             }
         }
-        //before adding to the list, run the integer thru a conditional, that checks if:
-        //num is single digit, if so, and is lower than previous num (e.g, 2 comes after 13), then add it after the num
-        //if single digit is greater than previous single digit, (e.g., 2 comes after 1), then add it after still
-//        for(i in 1..n){
-//            //ex. n == 10
-//            //convert to string -> then check to see the size of it, if its size is greater then the ones digit, pass it along to the next check
-//            when(i.toString().length) {
-//                //ex. i == 2
-//                1 -> {
-//                    //check to see if it goes like: 19 , 2
-//                    if (numList[index] < numList[index - 1] && (numList[index-1].toString().length > 1)){
-//                        numList.add(i)
-//                    }
-//                    //ex. 1, 2
-//                    else if(numList[index])
-//                }
-//                //ex. i == 10
-//                2 -> {
-//
-//                }
-//                //ex. i == 100
-//                3 -> {
-//
-//                }
-//                //ex. i == 1000
-//                4 -> {
-//
-//                }
-//            }
-//    }
-
-//            if(i.toString().length == 2 && (numList[index] > numList[index-1])){
-//                numList.add(i)
-//            }
-//
-//            else if(i.toString().length == 1 && (numList[index] > numList[index-1])){
-//
-//            }
-//
-//            //ex. 1, 10
-//            if(numList[i-1] < numList[i]){
-//                numList.add(i)
-//            }
-//            index++
-//        }
         return numList
     }
 
